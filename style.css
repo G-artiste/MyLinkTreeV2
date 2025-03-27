@@ -1,0 +1,207 @@
+/* Styles de base (mobile first) */
+/* === APP - container === */
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-black);
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--color-black);
+    padding: var(--spacing-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    margin-inline: auto;
+    font: var(--font-size-base) var(--font-family-base);
+}
+
+/* === HEADER === */
+
+.app__header {
+    position: relative;
+    border: solid 1px var(--color-black);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-base);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+    background-color: var(--color-primary);
+    color: var(--color-black);
+}
+
+.app__avatar {
+    padding: var(--spacing-xs);
+    border-radius: 50%;
+    height: 10rem;
+    aspect-ratio: 1/1;
+    margin: auto;
+    cursor: pointer;
+}
+
+.app__avatar > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.app__title {
+    font-size: var(--font-size-lg);
+}
+
+.app__tags {
+    display: flex;
+    gap: var(--spacing-xs);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app__tags li:not(:last-child)::after {
+    content: "|";
+    margin-left: var(--spacing-sm);
+}
+
+/* === MAIN === */
+
+.app__main {
+    height: 100%;
+    max-height: 48rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__main > .social {
+    background-color: var(--color-secondary);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-base);
+}
+
+.social__title {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.social__list {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+}
+
+.app__main > .options {
+    background-color: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: 1rem;
+    margin-top: var(--spacing-xs);
+    flex: auto;
+    height: 100%;
+}
+
+.options__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.options__button {
+    border: solid 1px rebeccapurple--color-black;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.options__button:hover {
+    background-color: var(--color-primary);
+    transform: scale(1.05);
+}
+
+/* === FOOTER === */
+
+.app__footer {
+    background-color: var(--color-rose);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-base);
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Styles pour les écrans à partir de 390px */
+@media (min-width: 390px) {
+    .app {
+        width: 36rem;
+    }
+}
+
+/* Styles pour les écrans à partir de 768px */
+@media (min-width: 768px) {
+    .app {
+        width: 60rem;
+        margin-top: 5rem;
+        gap: var(--spacing-sm);
+    }
+    .app__main > .options {
+        margin-top: var(--spacing-sm);
+    }
+}
+
+/* Styles pour les écrans à partir de 1024px */
+@media (min-width: 1024px) {
+    body {
+        background-image: url(./images/premium_photo-1694743671394-60034a1b2f65.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        justify-content: flex-start;
+    }
+    .app {
+        margin-top: 10rem;
+        height: auto;
+        background-color: transparent;
+        gap: var(--spacing-xxl);
+        font-size: var(--font-size-lg);
+    }
+    .app__header {
+        padding: var(--spacing-lg);
+        gap: var(--spacing-xl);
+    }
+    .app__avatar {
+        height: 20rem;
+    }
+    .app__main {
+        max-height: 54rem;
+    }
+    .app__main > .social {
+        padding: var(--spacing-xl);
+    }
+    .social__title {
+        margin-bottom: var(--spacing-xxl);
+    }
+    .social__list {
+        gap: var(--spacing-xxl);
+    }
+    .social__item svg {
+        width: 6rem;
+        height: 6rem;
+    }
+    .app__main > .options {
+        margin-top: var(--spacing-xxl);
+        padding: var(--spacing-xl);
+    }
+    .options__list {
+        gap: var(--spacing-lg);
+    }
+    .app__footer {
+        padding: var(--spacing-xl);
+    }
+}

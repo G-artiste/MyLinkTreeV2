@@ -1,0 +1,62 @@
+/* === RESET CSS DE BASE === */
+
+/* 1. Supprimer marges/paddings par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Supprimer la décoration des liens */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 3. Supprimer la liste des puces */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 4. Inheritance pour les polices */
+body,
+input,
+button,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+/* 5. Éviter le zoom sur mobile (tu peux adapter si besoin) */
+input,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 6. Supprimer les styles par défaut des boutons */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* 7. Prendre toute la hauteur de l'écran */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* 8. Supprimer les bordures d'images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 9. Harmonisation des rem : 1rem = 10px */
+html {
+    font-size: 62.5%;
+}

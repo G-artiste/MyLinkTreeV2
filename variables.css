@@ -1,0 +1,35 @@
+/* === VARIABLES GLOBALES === */
+
+:root {
+    /* Couleurs */
+    --color-rose: #f78fb3;
+    --color-primary: #F4EEE1;
+    --color-secondary: #edcc8d;
+    --color-accent: #f39c12;
+    --color-background: #e1d4c3;
+    --color-background1: #394142;
+    --color-background2: #212121;
+    --color-text: #2c3e50;
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    /* Typographie */
+    --font-family-base: "Nunito", sans-serif;
+    --font-size-xs: 1.2rem; /* 12px */
+    --font-size-sm: 1.4rem; /* 14px */
+    --font-size-base: 1.6rem; /* 16px */
+    --font-size-lg: 1.8rem; /* 20px */
+    --font-size-xl: 2.4rem; /* 24px */
+
+    /* Espacements */
+    --spacing-xs: 0.4rem; /* 4px */
+    --spacing-sm: 0.8rem; /* 8px */
+    --spacing-md: 1.6rem; /* 16px */
+    --spacing-lg: 2.4rem; /* 24px */
+    --spacing-xl: 3.2rem; /* 32px */
+    --spacing-xxl: 4.8rem;  /* 48px */
+
+    /* Border Radius */
+    --radius-base: 1rem;
+    --radius-lg: 2rem;
+}
