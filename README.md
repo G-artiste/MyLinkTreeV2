@@ -64,3 +64,8 @@ Mais surtout, **j’ai appris à utiliser GitHub pour la première fois** :
 ├── index.html
 ├── style.css
 └── README.md
+
+
+## Lien vers le projet en ligne
+
+[Voir le projet sur Vercel](https://my-link-tree-v2.vercel.app/)
